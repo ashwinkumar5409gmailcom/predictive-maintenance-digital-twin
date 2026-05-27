@@ -176,21 +176,32 @@ st.subheader("Confusion Matrix")
 
 exp_root = Path("outputs/experiments")
 
-runs = sorted(
-    [p for p in exp_root.iterdir() if p.is_dir()],
-    reverse=True
-)
-
-latest = runs[0]
-
-cm_candidates = [
-    latest / "confusion_matrix_eval.png",
-    latest / "assets" / "confusion_matrix.png"
-]
-
-cm_file = next((p for p in cm_candidates if p.exists()), None)
-
-if cm_file:
-    st.image(Image.open(cm_file), caption=f"Experiment: {latest.name}")
+if not exp_root.exists():
+    st.warning("No experiment outputs found in deployment.")
 else:
-    st.warning("Confusion matrix not found.")
+
+    runs = sorted(
+        [p for p in exp_root.iterdir() if p.is_dir()],
+        reverse=True
+    )
+
+    if not runs:
+        st.warning("No experiment folders found.")
+    else:
+
+        latest = runs[0]
+
+        candidates = [
+            latest / "confusion_matrix_eval.png",
+            latest / "assets" / "confusion_matrix.png"
+        ]
+
+        found = next((p for p in candidates if p.exists()), None)
+
+        if found:
+            st.image(
+                Image.open(found),
+                caption=f"Experiment: {latest.name}"
+            )
+        else:
+            st.warning("Confusion matrix not found.")
