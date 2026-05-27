@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "RandomForest": {
+      "accuracy": 0.3069374714742127,
+      "balanced_accuracy": 0.3069374714742127,
+      "f1_macro": 0.3187432972842812,
+      "matthews_corrcoef": 0.19991271927236093,
+      "cohen_kappa": 0.19142705005324812,
+      "log_loss": 1.898568922262353,
+      "roc_auc_ovr": 0.7191429358849666
+    },
+    "GradientBoosting": {
+      "accuracy": 0.18963943404837974,
+      "balanced_accuracy": 0.18963943404837974,
+      "f1_macro": 0.18510709117039706,
+      "matthews_corrcoef": 0.05658131139540161,
+      "cohen_kappa": 0.05457933972310969,
+      "log_loss": 3.806461086978257,
+      "roc_auc_ovr": 0.6313938471304577
+    },
+    "LogisticRegression": {
+      "accuracy": 0.22843450479233227,
+      "balanced_accuracy": 0.22843450479233224,
+      "f1_macro": 0.20174148008271134,
+      "matthews_corrcoef": 0.10717688917724282,
+      "cohen_kappa": 0.09984025559105436,
+      "log_loss": 8.369281216529515,
+      "roc_auc_ovr": 0.6776858836298557
+    },
+    "MLP": {
+      "accuracy": 0.22774988589685075,
+      "balanced_accuracy": 0.22774988589685075,
+      "f1_macro": 0.25055244876723165,
+      "matthews_corrcoef": 0.10722911125155696,
+      "cohen_kappa": 0.09904153354632583,
+      "log_loss": 11.417566657701071,
+      "roc_auc_ovr": 0.636299857243472
+    }
+  }
+}

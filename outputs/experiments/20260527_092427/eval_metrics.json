@@ -1,0 +1,13 @@
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision_macro": 1.0,
+  "recall_macro": 1.0,
+  "f1_macro": 1.0,
+  "matthews_corrcoef": 1.0,
+  "cohen_kappa": 1.0,
+  "log_loss": null,
+  "roc_auc_ovr": null,
+  "num_samples": 1899,
+  "model_dir": "/Users/ashwinsathishkumar/Downloads/Mtech project/project/src/../outputs/experiments/20260527_092427"
+}

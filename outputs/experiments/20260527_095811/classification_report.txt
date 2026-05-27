@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+     Healthy       0.00      0.00      0.00       313
+Bearing Wear       0.00      0.00      0.00       313
+Misalignment       0.14      0.10      0.12       313
+    Overload       1.00      0.64      0.78       313
+   Imbalance       0.05      0.06      0.06       313
+   Looseness       0.00      0.00      0.00       313
+ Multi Fault       0.00      0.00      0.00       313
+
+    accuracy                           0.11      2191
+   macro avg       0.17      0.11      0.14      2191
+weighted avg       0.17      0.11      0.14      2191

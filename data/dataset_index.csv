@@ -1,0 +1,43 @@
+run_id,file,samples,fault,severity,active_faults,speed_rpm,load_fraction,ambient_temp,rng_seed,subset
+run_0,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_0.npz,10240,healthy,mild,['healthy'],1848.500052995656,0.6471096206143133,25.65236106481189,79197,test
+run_1,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_1.npz,10240,healthy,mild,['healthy'],1430.1769036801322,0.4553579400657996,25.592071607454137,764998,val
+run_2,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_2.npz,10240,healthy,mild,['healthy'],1356.0848219660252,0.603081783456794,24.367173892323624,982738,train
+run_3,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_3.npz,10240,healthy,mild,['healthy'],1773.6562493926951,0.2353403073268166,22.339394858653407,214584,train
+run_4,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_4.npz,10240,healthy,mild,['healthy'],2044.522565074551,0.4281383892021996,22.93593757766683,434316,val
+run_5,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_5.npz,10240,healthy,mild,['healthy'],1009.1251443746046,0.2283898209106413,26.64313540327387,661916,train
+run_6,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_6.npz,10240,bearing_wear,mild,['bearing_wear'],1379.0306569625757,0.6814020384666035,21.66972919907704,334291,train
+run_7,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_7.npz,10240,bearing_wear,moderate,['bearing_wear'],1308.170720813744,0.222235935059645,24.618772302513875,22712,val
+run_8,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_8.npz,10240,bearing_wear,severe,['bearing_wear'],2080.767666219828,0.4501044775103364,21.523121027131683,497330,train
+run_9,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_9.npz,10240,bearing_wear,mild,['bearing_wear'],991.385004091845,0.6381021226096483,23.01512089147877,696320,val
+run_10,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_10.npz,10240,bearing_wear,moderate,['bearing_wear'],1429.183300858631,0.836181261055339,20.87649919316101,342590,train
+run_11,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_11.npz,10240,bearing_wear,severe,['bearing_wear'],1073.9036263279222,0.6908580690707607,26.997071338107496,118005,test
+run_12,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_12.npz,10240,misalignment,mild,['misalignment'],1732.5705489003417,0.2469176377347724,27.787509039657948,261140,val
+run_13,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_13.npz,10240,misalignment,moderate,['misalignment'],991.8978403430062,0.4272241561845159,20.96390962153499,716890,test
+run_14,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_14.npz,10240,misalignment,severe,['misalignment'],1064.4163834470146,0.8455776289833611,22.023633647952305,721616,train
+run_15,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_15.npz,10240,misalignment,mild,['misalignment'],1012.6751310307034,0.8176772782939231,28.566142840923753,305956,val
+run_16,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_16.npz,10240,misalignment,moderate,['misalignment'],1874.4536245925408,0.2219462955950936,24.32093039775104,308667,train
+run_17,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_17.npz,10240,misalignment,severe,['misalignment'],1418.8379450364528,0.214984660155482,20.84444321139889,627308,train
+run_18,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_18.npz,10240,overload,mild,['overload'],1775.7525318251355,0.4041614173861892,24.939908192445188,188225,train
+run_19,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_19.npz,10240,overload,moderate,['overload'],2074.8725144808486,0.8103402967722552,25.87644572177712,329861,test
+run_20,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_20.npz,10240,overload,severe,['overload'],2084.048724924984,0.8925120118376797,25.81061139700395,447038,train
+run_21,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_21.npz,10240,overload,mild,['overload'],1420.3650700918372,0.6022803871029698,29.585592132414455,346869,val
+run_22,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_22.npz,10240,overload,moderate,['overload'],2193.7708098039006,0.4782735227250286,20.827299999224387,275847,train
+run_23,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_23.npz,10240,overload,severe,['overload'],1797.323614374102,0.8937826454974983,25.717280523760753,486658,val
+run_24,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_24.npz,10240,imbalance,mild,['imbalance'],2190.6682691720475,0.4266975663091893,23.31568997342552,545004,train
+run_25,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_25.npz,10240,imbalance,moderate,['imbalance'],2178.4968340273763,0.402161207988033,28.262919241943575,520672,test
+run_26,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_26.npz,10240,imbalance,severe,['imbalance'],2339.448591687598,0.1640249088998611,25.540361435390498,315692,val
+run_27,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_27.npz,10240,imbalance,mild,['imbalance'],1438.581780840918,0.4281233783839008,26.59422634691902,108575,val
+run_28,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_28.npz,10240,imbalance,moderate,['imbalance'],1865.374448914622,0.2268647491917657,21.077409459558964,614642,train
+run_29,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_29.npz,10240,imbalance,severe,['imbalance'],1722.3016293777257,0.603741255617618,25.548524693914835,916011,train
+run_30,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_30.npz,10240,looseness,mild,['looseness'],2154.5646439195784,0.6829789743132413,28.08251472064302,963211,train
+run_31,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_31.npz,10240,looseness,moderate,['looseness'],2359.42058706455,0.1790917838140118,25.150571292317142,317138,train
+run_32,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_32.npz,10240,looseness,severe,['looseness'],960.9544144908164,0.4936043570048963,21.646078175820183,533156,test
+run_33,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_33.npz,10240,looseness,mild,['looseness'],989.615529600486,0.8992375564055837,28.91677266254914,44910,val
+run_34,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_34.npz,10240,looseness,moderate,['looseness'],1871.5991096036012,0.4890792490878525,28.93446639697863,115980,val
+run_35,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_35.npz,10240,looseness,severe,['looseness'],970.5486482929268,0.2272012432110988,26.61661263167761,518858,train
+run_36,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_36.npz,10240,multi_fault,mild,"['overload', 'imbalance']",1763.6134259156286,0.6094466668061516,27.467896113490266,379991,val
+run_37,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_37.npz,10240,multi_fault,moderate,"['bearing_wear', 'misalignment']",1069.8901040854048,0.8240970575005685,21.22757932411486,262460,val
+run_38,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_38.npz,10240,multi_fault,severe,"['misalignment', 'overload']",1474.1692385559788,0.8153284316624494,21.79268308157739,367208,train
+run_39,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_39.npz,10240,multi_fault,mild,"['bearing_wear', 'looseness']",1483.901897147592,0.6196434665714573,23.103236729000947,599382,train
+run_40,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_40.npz,10240,multi_fault,moderate,"['looseness', 'misalignment']",1462.1386837660236,0.2471826426060967,25.007411862023424,433698,test
+run_41,/Users/ashwinsathishkumar/Downloads/Mtech project/project/data/run_41.npz,10240,multi_fault,severe,"['misalignment', 'looseness']",922.2298060333122,0.8229656029998855,21.31822217786521,143897,train

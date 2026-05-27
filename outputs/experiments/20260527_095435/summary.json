@@ -1,0 +1,52 @@
+{
+  "run_dir": "/Users/ashwinsathishkumar/Downloads/Mtech project/project/outputs/experiments/20260527_095435",
+  "trained_samples": 7512,
+  "validation_samples": 2817,
+  "hybrid_metrics": {
+    "accuracy": 0.25736599219027334,
+    "balanced_accuracy": 0.19531416400425985,
+    "f1_macro": 0.1842305794449186,
+    "matthews_corrcoef": 0.21582296725213335,
+    "cohen_kappa": 0.17504272006309418,
+    "log_loss": null,
+    "roc_auc_ovr": null
+  },
+  "baseline_metrics": {
+    "RandomForest": {
+      "accuracy": 0.2477813276535321,
+      "balanced_accuracy": 0.18849840255591052,
+      "f1_macro": 0.1778794396116017,
+      "matthews_corrcoef": 0.20121253367023761,
+      "cohen_kappa": 0.1668778122406186,
+      "log_loss": null,
+      "roc_auc_ovr": null
+    },
+    "GradientBoosting": {
+      "accuracy": 0.3028044018459354,
+      "balanced_accuracy": 0.23205537806176785,
+      "f1_macro": 0.19978872510022816,
+      "matthews_corrcoef": 0.23470982330588924,
+      "cohen_kappa": 0.20014480293225934,
+      "log_loss": null,
+      "roc_auc_ovr": null
+    },
+    "LogisticRegression": {
+      "accuracy": 0.43734469293574724,
+      "balanced_accuracy": 0.4010649627263046,
+      "f1_macro": 0.2983170702379286,
+      "matthews_corrcoef": 0.35746064777954,
+      "cohen_kappa": 0.31276195982078336,
+      "log_loss": null,
+      "roc_auc_ovr": null
+    },
+    "MLP": {
+      "accuracy": 0.3990060347887824,
+      "balanced_accuracy": 0.38498402555910544,
+      "f1_macro": 0.2851901237962654,
+      "matthews_corrcoef": 0.33124931501647886,
+      "cohen_kappa": 0.2893521757380718,
+      "log_loss": null,
+      "roc_auc_ovr": null
+    }
+  }
+}

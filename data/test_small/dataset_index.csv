@@ -1,0 +1,2 @@
+file,samples,fault,severity,speed_rpm,load_fraction
+data/test_small/run_0.npz,20480,misalignment,severe,1800,0.2

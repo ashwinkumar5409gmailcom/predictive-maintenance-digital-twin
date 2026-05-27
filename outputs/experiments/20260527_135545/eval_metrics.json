@@ -1,0 +1,14 @@
+{
+  "accuracy": 0.2879963486992241,
+  "balanced_accuracy": 0.28799634869922414,
+  "precision_macro": 0.26416922494367034,
+  "recall_macro": 0.28799634869922414,
+  "f1_macro": 0.2740928475707133,
+  "matthews_corrcoef": 0.17316717183735658,
+  "cohen_kappa": 0.1693290734824282,
+  "log_loss": 5.716566060686457,
+  "roc_auc_ovr": 0.5442980262463977,
+  "num_samples": 2191,
+  "model_dir": "/Users/ashwinsathishkumar/Downloads/Mtech project/project/outputs/experiments/20260527_135545",
+  "subset": "test"
+}

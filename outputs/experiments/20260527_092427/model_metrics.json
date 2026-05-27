@@ -1,0 +1,11 @@
+{
+  "hybrid": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1_macro": 1.0,
+    "matthews_corrcoef": 1.0,
+    "cohen_kappa": 1.0,
+    "log_loss": null,
+    "roc_auc_ovr": null
+  }
+}
