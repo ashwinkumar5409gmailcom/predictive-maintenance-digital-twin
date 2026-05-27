@@ -164,11 +164,33 @@ else:
 
 st.sidebar.markdown('---')
 st.sidebar.write('Last refresh: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
-try:
-    rerun_fn = st.experimental_rerun
-except AttributeError:
-    def rerun_fn():
-        st.warning('Please refresh the browser manually to load the latest dashboard data.')
-
 if st.sidebar.button('Refresh'):
-    rerun_fn()
+    if hasattr(st, "rerun"):
+        st.rerun()
+    else:
+        st.warning("Please refresh the browser manually.")
+from pathlib import Path
+from PIL import Image
+
+st.subheader("Confusion Matrix")
+
+exp_root = Path("outputs/experiments")
+
+runs = sorted(
+    [p for p in exp_root.iterdir() if p.is_dir()],
+    reverse=True
+)
+
+latest = runs[0]
+
+cm_candidates = [
+    latest / "confusion_matrix_eval.png",
+    latest / "assets" / "confusion_matrix.png"
+]
+
+cm_file = next((p for p in cm_candidates if p.exists()), None)
+
+if cm_file:
+    st.image(Image.open(cm_file), caption=f"Experiment: {latest.name}")
+else:
+    st.warning("Confusion matrix not found.")
