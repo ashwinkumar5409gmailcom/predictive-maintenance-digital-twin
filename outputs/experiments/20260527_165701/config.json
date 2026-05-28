@@ -1,0 +1,19 @@
+{
+  "data_dir": "/Users/ashwinsathishkumar/Downloads/Mtech project/project/data",
+  "out_dir": "outputs",
+  "run_dir": "/Users/ashwinsathishkumar/Downloads/Mtech project/project/outputs/experiments/20260527_165701",
+  "target_samples": 50000,
+  "epochs": 20,
+  "sample_rate": 2048,
+  "window_size": 256,
+  "window_step": 32,
+  "fault_modes": [
+    "healthy",
+    "bearing_wear",
+    "misalignment",
+    "overload",
+    "imbalance",
+    "looseness",
+    "multi_fault"
+  ]
+}

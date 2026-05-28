@@ -188,7 +188,14 @@ def main():
         idx['run_id'] = [f'run_{i}' for i in range(len(idx))]
 
     run_ids = [entry['run_id'] for entry in runs]
-    if len(run_ids) < 14:
+   run_ids_by_fault = {}
+
+for entry in runs:
+    run_ids_by_fault.setdefault(
+        entry['fault'],
+        []
+    ).append(entry['run_id'])
+ if len(run_ids) < 14:
         raise RuntimeError('Dataset must contain at least 14 independent runs to avoid leakage and produce meaningful group splits.')
 
     run_id_to_index = {entry['run_id']: idx for idx, entry in enumerate(runs)}
@@ -197,24 +204,36 @@ def main():
         run_ids_by_fault.setdefault(entry['fault'], []).append(entry['run_id'])
 
     rng = np.random.default_rng(args.seed)
-    train_run_ids = []
-    val_run_ids = []
-    test_run_ids = []
-    for fault in cfg.fault_modes:
-        class_run_ids = run_ids_by_fault.get(fault, [])
-        if len(class_run_ids) < 3:
-            raise RuntimeError(f'Not enough runs for fault class {fault} to create a held-out validation and test split.')
-        rng.shuffle(class_run_ids)
-        n = len(class_run_ids)
-        train_n = max(3, int(np.round(n * 0.50)))
-        val_n = max(1, int(np.round(n * 0.25)))
-        test_n = max(1, n - train_n - val_n)
-        if train_n + val_n + test_n != n:
-            test_n = n - train_n - val_n
-        train_run_ids.extend(class_run_ids[:train_n])
-        val_run_ids.extend(class_run_ids[train_n:train_n + val_n])
-        test_run_ids.extend(class_run_ids[train_n + val_n:])
+train_run_ids = []
+val_run_ids = []
+test_run_ids = []
 
+for fault in cfg.fault_modes:
+    class_run_ids = run_ids_by_fault.get(fault, [])
+
+    if len(class_run_ids) < 6:
+        raise RuntimeError(
+            f'Need at least 6 runs for fault class {fault}; '
+            f'found {len(class_run_ids)}'
+        )
+
+    rng.shuffle(class_run_ids)
+
+    # Fixed deterministic split: 4 train / 1 val / 1 test
+    train_n = 4
+    val_n = 1
+    test_n = 1
+
+    train_run_ids.extend(class_run_ids[:train_n])
+
+    val_run_ids.extend(
+        class_run_ids[train_n:train_n + val_n]
+    )
+
+    test_run_ids.extend(
+        class_run_ids[train_n + val_n:
+                      train_n + val_n + test_n]
+    )
     train_run_idx = [run_id_to_index[run_id] for run_id in train_run_ids]
     val_run_idx = [run_id_to_index[run_id] for run_id in val_run_ids]
     test_run_idx = [run_id_to_index[run_id] for run_id in test_run_ids]

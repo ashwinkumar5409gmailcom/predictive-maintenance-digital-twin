@@ -2,8 +2,6 @@ __pycache__/
 *.pyc
 venv/
 .env
-outputs/*
-data/*
 *.db
 *.npy
 *.npz
